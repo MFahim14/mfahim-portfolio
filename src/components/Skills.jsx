@@ -12,15 +12,15 @@ const Skills = () => {
     },
     {
       name: "AWS Cloud",
-      skills: ["AWS IAM", "Lambda", "S3", "CloudFront", "DynamoDB", "EC2", "CloudWatch", "Elastic Beanstalk", "ALB", "Auto Scaling", "CloudFormation", "Config", "Secrets Manager"]
+      skills: ["AWS IAM", "Lambda", "S3", "CloudFront", "DynamoDB", "EC2", "CloudWatch", "Elastic Beanstalk", "ALB", "Auto Scaling", "CloudFormation", "Config", "Secrets Manager", "Step Functions", "EventBridge", "SQS", "VPC Endpoints"]
     },
     {
       name: "AI/ML",
-      skills: ["OpenAI GPT", "Embeddings", "AWS Bedrock", "Claude", "LangChain", "RAG", "Pinecone", "Scikit-learn", "Gemini AI", "LlamaParse", "Strands SDK"]
+      skills: ["OpenAI GPT", "Embeddings", "Amazon Titan Embeddings", "AWS Bedrock", "Claude", "LangChain", "RAG", "Pinecone", "Scikit-learn", "Gemini AI", "LlamaParse", "Strands SDK"]
     },
     {
       name: "Database & Data",
-      skills: ["PostgreSQL", "SQLAlchemy", "RDS", "MySQL", "DynamoDB Streams", "Redis Cloud", "RediSearch", "Pandas", "Data Pipelines", "ETL"]
+      skills: ["PostgreSQL", "SQLAlchemy", "RDS", "MySQL", "DynamoDB Streams", "DynamoDB vector index", "Redis Cloud", "RediSearch", "Pandas", "Data Pipelines", "ETL"]
     },
     {
       name: "API & Integration",
@@ -28,7 +28,7 @@ const Skills = () => {
     },
     {
       name: "DevOps & Security",
-      skills: ["Git", "GitHub", "GitHub Actions", "Docker", "ECS", "Playwright", "Jenkins", "Cognito", "GuardDuty", "OAuth 2.0", "JWT", "OTP", "bcrypt", "SSL/TLS"]
+      skills: ["Git", "GitHub", "GitHub Actions", "Docker", "ECS Fargate", "Playwright", "Jenkins", "Cognito", "GuardDuty", "OAuth 2.0", "JWT", "OTP", "bcrypt", "SSL/TLS"]
     }
   ];
 

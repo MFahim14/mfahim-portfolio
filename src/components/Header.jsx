@@ -62,7 +62,7 @@ const Header = () => {
                 animate="visible"
               >
                 <a
-                  href={item === 'Resume' ? '/Fahim_Resume.pdf' : `#${item.toLowerCase()}`}
+                  href={item === 'Resume' ? '/Fahim_CV.pdf' : `#${item.toLowerCase()}`}
                   target={item === 'Resume' ? '_blank' : undefined}
                   rel={item === 'Resume' ? 'noopener noreferrer' : undefined}
                   className="text-sm font-medium hover:text-light transition-colors duration-300"
@@ -118,7 +118,7 @@ const Header = () => {
                     transition={{ duration: 0.2 }}
                   >
                     <a
-                      href={item === 'Resume' ? '/Fahim_Resume.pdf' : `#${item.toLowerCase()}`}
+                      href={item === 'Resume' ? '/Fahim_CV.pdf' : `#${item.toLowerCase()}`}
                       target={item === 'Resume' ? '_blank' : undefined}
                       rel={item === 'Resume' ? 'noopener noreferrer' : undefined}
                       className="text-sm font-medium"

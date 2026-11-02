@@ -6,6 +6,19 @@ const Projects = () => {
 
   const projects = [
     {
+      title: "AI-Powered Vehicle Intelligence Platform",
+      description: "Discovers, ranks, and prices live vehicle inventory with AI. ECS Fargate crawlers run on EventBridge and Step Functions; SQS loads the catalog into DynamoDB. Titan embeddings power a DynamoDB vector index for natural-language search, Bedrock ranks matches, and Gemini prices each vehicle. Next.js serves the results, secured with Cognito, IAM, Secrets Manager, and VPC endpoints.",
+      tech: ["Next.js", "AWS Lambda", "API Gateway", "DynamoDB vector index", "ECS Fargate", "Step Functions", "EventBridge", "SQS", "Amazon Bedrock", "Amazon Titan Embeddings", "Gemini", "Amazon Cognito", "AWS IAM", "AWS Secrets Manager", "VPC Endpoints"],
+      image: "/images/placeholder.png",
+      liveLink: "",
+      highlights: [
+        "Natural-language search over live vehicle inventory",
+        "Semantic retrieval with Titan embeddings on a DynamoDB vector index",
+        "Scheduled collection on ECS Fargate, orchestrated by Step Functions, EventBridge, and SQS",
+        "Match ranking and vehicle pricing, with access secured through Cognito and Secrets Manager"
+      ]
+    },
+    {
       title: "Fleet Operations Intelligence Agent",
       description: "Delivers natural-language fleet intelligence via a Bedrock-backed agent. Routes requests by API path, queries DynamoDB (FleetData) for customers, vehicles, insurance, and maintenance, and powers dashboards with semantic search (Redis/RediSearch) and DynamoDB Streams for live indexing.",
       tech: ["AWS Bedrock Agents", "Lambda", "DynamoDB", "API Gateway WebSocket", "OpenAPI 3.0", "Redis Cloud", "RediSearch", "DynamoDB Streams"],
