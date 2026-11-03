@@ -89,7 +89,7 @@ const Hero = () => {
           >
             Software Engineer with 2 years designing AI-powered, cloud-native systems on AWS—production agents, least-privilege architecture, and real-time enterprise automation.
           </motion.p>
-          <motion.p variants={childVariants} className="text-muted text-sm mb-10">Open to backend, cloud, AI, and full-stack opportunities.</motion.p>
+          <motion.p variants={childVariants} className="text-muted text-sm mb-10">Open to backend, cloud, AI, security, and full-stack opportunities.</motion.p>
 
           {/* Social and CTAs */}
           <motion.div
