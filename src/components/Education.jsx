@@ -53,7 +53,7 @@ const Education = () => {
             <p className="text-muted text-sm mb-2">
               Bachelor of Engineering · Computer Science
             </p>
-            <p className="text-xs font-mono text-light opacity-70">2021 – 2025</p>
+            <p className="text-xs font-mono text-light opacity-70">Sept 2021 – June 2025</p>
           </motion.div>
 
           <motion.div

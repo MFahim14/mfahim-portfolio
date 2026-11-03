@@ -6,60 +6,60 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "AI-Powered Vehicle Intelligence Platform",
-      description: "Discovers, ranks, and prices live vehicle inventory with AI. ECS Fargate crawlers run on EventBridge and Step Functions; SQS loads the catalog into DynamoDB. Titan embeddings power a DynamoDB vector index for natural-language search, Bedrock ranks matches, and Gemini prices each vehicle. Next.js serves the results, secured with Cognito, IAM, Secrets Manager, and VPC endpoints.",
-      tech: ["Next.js", "AWS Lambda", "API Gateway", "DynamoDB vector index", "ECS Fargate", "Step Functions", "EventBridge", "SQS", "Amazon Bedrock", "Amazon Titan Embeddings", "Gemini", "Amazon Cognito", "AWS IAM", "AWS Secrets Manager", "VPC Endpoints"],
-      image: "/images/placeholder.png",
-      liveLink: "",
-      highlights: [
-        "Natural-language search over live vehicle inventory",
-        "Semantic retrieval with Titan embeddings on a DynamoDB vector index",
-        "Scheduled collection on ECS Fargate, orchestrated by Step Functions, EventBridge, and SQS",
-        "Match ranking and vehicle pricing, with access secured through Cognito and Secrets Manager"
-      ]
-    },
-    {
       title: "Fleet Operations Intelligence Agent",
-      description: "Delivers natural-language fleet intelligence via a Bedrock-backed agent. Routes requests by API path, queries DynamoDB (FleetData) for customers, vehicles, insurance, and maintenance, and powers dashboards with semantic search (Redis/RediSearch) and DynamoDB Streams for live indexing.",
+      description: "Delivers natural-language fleet intelligence via a Bedrock-backed agent. Nine OpenAPI 3.0 endpoints route requests and query DynamoDB for vehicle, financial, insurance, and maintenance data. Redis/RediSearch covers 35+ dashboard filters, with DynamoDB Streams keeping indexes live.",
       tech: ["AWS Bedrock Agents", "Lambda", "DynamoDB", "API Gateway WebSocket", "OpenAPI 3.0", "Redis Cloud", "RediSearch", "DynamoDB Streams"],
       image: "/images/placeholder.png",
       liveLink: "",
       highlights: [
+        "9 API endpoints via OpenAPI 3.0 for Bedrock Agent orchestration",
+        "35+ dashboard filters across vehicle, financial, insurance, and maintenance",
         "Plain-language questions return structured fleet data",
-        "Coverage across insurance, maintenance, and delinquency",
-        "Real-time indexing so dashboards stay current",
-        "API contract designed for Bedrock Agent orchestration"
+        "Real-time indexing with DynamoDB Streams so dashboards stay current"
       ]
     },
     {
       title: "Unified Business Communications",
-      description: "Unifies SMS, MMS, and WebRTC voice in one stack for customer conversations. Secures access with JWT, OTP, and RBAC; exposes 50+ RESTful endpoints. Adds an AI layer for semantic routing and FAQ auto-reply to cut response time.",
-      tech: ["FastAPI", "PostgreSQL", "SignalWire", "S3", "CloudFront", "WebRTC", "OpenAI GPT", "Scikit-learn", "JWT", "OTP"],
+      description: "Unifies SMS, MMS, and WebRTC voice (LAML/cXML) in one stack. Secures access with JWT, OTP, bcrypt, and RBAC across 50+ REST endpoints. OpenAI GPT, embeddings, and Scikit-learn route FAQs and auto-reply, cutting response time by 60% with ThreadPoolExecutor.",
+      tech: ["FastAPI", "PostgreSQL", "SignalWire", "S3", "CloudFront", "WebRTC", "LAML/cXML", "OpenAI GPT", "Scikit-learn", "JWT", "OTP", "bcrypt", "RBAC", "ThreadPoolExecutor"],
       image: "/images/placeholder.png",
       liveLink: "",
       highlights: [
         "Single stack for voice, SMS, and MMS",
-        "Centralized auth and role-based access",
-        "Semantic routing and auto-reply for common queries",
-        "Parallel processing for lower latency"
+        "JWT, OTP, bcrypt, and RBAC across 50+ REST endpoints",
+        "Semantic routing and FAQ auto-reply",
+        "60% faster responses with ThreadPoolExecutor"
       ]
     },
     {
       title: "Data Intelligence & Workflow Automation",
-      description: "Runs document and approval pipelines end-to-end. Ingests PDFs via S3 and LlamaParse; extracts payments from email with Gemini AI and SQS. Parses unapproved invoices with Gemini, validates amount and vendor, then routes to Slack for owner approval or auto-approves by threshold. Playwright automates insurance quote retrieval. Feeds financial dashboards and audit trails.",
+      description: "Runs document and approval pipelines end-to-end. LlamaParse extracts PDFs at 95% accuracy; Gemini and SQS parse payments and invoices, then Slack routes approval or auto-approves by threshold. Playwright retrieves insurance quotes. Bedrock agents power natural-language analytics, dashboards, form tracking, and documentation.",
       tech: ["AWS Lambda", "PostgreSQL", "SQS", "LlamaParse", "Gemini AI", "Slack", "Playwright", "AWS Bedrock"],
       image: "/images/placeholder.png",
       liveLink: "",
       highlights: [
-        "Document extraction and payment parsing from multiple sources",
-        "Slack-driven approval with amount threshold and vendor checks",
-        "Browser automation for quote retrieval and screenshots",
-        "Single source of truth for financial reporting"
+        "LlamaParse document extraction at 95% accuracy",
+        "Slack approval with amount threshold and vendor checks",
+        "Playwright automation for insurance quote retrieval",
+        "Bedrock agents for analytics, form tracking, and documentation"
+      ]
+    },
+    {
+      title: "AI-Powered Vehicle Intelligence Platform",
+      description: "Discovers, ranks, and prices live vehicle inventory with AI. ECS Fargate crawlers run on EventBridge and Step Functions; SQS loads the catalog into DynamoDB. Titan embeddings and Grok on Bedrock power a DynamoDB vector index for search and ranking, and Gemini prices each vehicle. Next.js serves the results, secured with Cognito, IAM, Secrets Manager, and VPC endpoints.",
+      tech: ["Next.js", "AWS Lambda", "API Gateway", "DynamoDB vector index", "ECS Fargate", "Step Functions", "EventBridge", "SQS", "Amazon Bedrock", "Amazon Titan Embeddings", "Grok", "Gemini", "Amazon Cognito", "AWS IAM", "AWS Secrets Manager", "VPC Endpoints"],
+      image: "/images/placeholder.png",
+      liveLink: "",
+      highlights: [
+        "Natural-language search over live vehicle inventory",
+        "Semantic retrieval and ranking with Titan embeddings and Grok",
+        "Scheduled collection on ECS Fargate via Step Functions, EventBridge, and SQS",
+        "Gemini vehicle pricing, secured with Cognito and Secrets Manager"
       ]
     },
     {
       title: "Email-to-SMS & Google Voice Hub",
-      description: "Bridges Gmail and SMS/Google Voice. Processes incoming email via SQS, structures contacts and conversations, and persists to DynamoDB. Pushes live updates over WebSocket. Keeps conversation history queryable for always-on support.",
+      description: "Bridges Gmail and SMS/Google Voice. Processes incoming email via SQS, structures contacts and conversations, and persists to DynamoDB. Pushes live updates over WebSocket and keeps history queryable, delivering 99.9% uptime for always-on support.",
       tech: ["Gmail API", "WebSocket", "DynamoDB", "Google Voice", "SQS"],
       image: "/images/placeholder.png",
       liveLink: "",
@@ -67,7 +67,7 @@ const Projects = () => {
         "Unified inbox for email and SMS/Google Voice",
         "Event-driven pipeline from ingest to storage",
         "Live updates and connection state via WebSocket",
-        "Searchable history for support and compliance"
+        "99.9% uptime with searchable conversation history"
       ]
     },
     {
@@ -113,7 +113,7 @@ const Projects = () => {
           <h4 className="font-mono text-sm text-muted mb-2">PORTFOLIO</h4>
           <h2 className="text-2xl md:text-4xl font-bold mb-4">Featured Projects</h2>
           <div className="w-16 h-[2px] bg-light opacity-50 mb-4"></div>
-          <p className="text-muted text-sm">FairPAY Tech Works · Software Engineer - AI & Backend · December 2024 – Present</p>
+          <p className="text-muted text-sm">FairPAY Tech Works · AI & AWS Engineer · December 2024 – Present</p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8">

@@ -80,14 +80,14 @@ const Hero = () => {
             <div className="nothing-headline font-mono tracking-wide">
               <DottedText text="MOHAMMED FAHIM" />
             </div>
-            <div className="mt-3 text-gradient">Software Engineer & AWS Solutions Architect</div>
+            <div className="mt-3 text-gradient">Software Engineer · AWS Solutions Architect & Security Specialty</div>
           </motion.h1>
 
           <motion.p
             variants={childVariants}
             className="text-muted text-lg md:text-xl mb-10 max-w-xl"
           >
-            Building AI-powered, cloud-native systems on AWS—from intelligent agents and real-time platforms to scalable automation. Focused on clean architecture and impact.
+            Software Engineer with 2 years designing AI-powered, cloud-native, and serverless systems on AWS—scalable automation, least-privilege architecture, and real-time enterprise applications.
           </motion.p>
           <motion.p variants={childVariants} className="text-muted text-sm mb-10">Open to backend, cloud, AI, and full-stack opportunities.</motion.p>
 
