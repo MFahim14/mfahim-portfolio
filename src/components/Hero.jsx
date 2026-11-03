@@ -80,7 +80,7 @@ const Hero = () => {
             <div className="nothing-headline font-mono tracking-wide">
               <DottedText text="MOHAMMED FAHIM" />
             </div>
-            <div className="mt-3 text-lg md:text-xl font-medium text-gradient">Software Engineer · AWS Solutions Architect & Security Specialty</div>
+            <div className="mt-3 text-3xl md:text-5xl text-gradient">Software Engineer · AWS Solutions Architect & Security Specialty</div>
           </motion.h1>
 
           <motion.p
